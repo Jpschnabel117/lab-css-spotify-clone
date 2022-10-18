@@ -1,3 +1,6 @@
+body {
+  font-family: sans-serif;
+}
 .landing {
   height: 75vh;
   background-image: url(../images/landing.jpg);
@@ -29,12 +32,13 @@ header {
   justify-content: space-between;
   margin-left: 5%;
   margin-right: 5%;
+  align-items: center;
 }
 
 nav {
   display: flex;
-
   justify-content: space-between;
+  margin-left: 10%;
 }
 nav > a {
   text-decoration: none;
@@ -104,6 +108,10 @@ h3 {
   font-size: 30px;
   margin: 5%;
 }
+#hammenu {
+  visibility: hidden;
+  width: 0%;
+}
 
 @media (max-width: 680px) {
   .kanyesection {
@@ -113,8 +121,31 @@ h3 {
   }
   #app {
     width: 70vw;
+    margin: 0%;
   }
   .info {
     width: 70vw;
+  }
+  .threeblockthing {
+    flex-direction: column;
+    width: 80vw;
+  }
+  .threeblockthing > section {
+    width: 80vw;
+  }
+  nav > a {
+    visibility: hidden;
+    width: 0%;
+    margin: 0%;
+  }
+  #hammenu {
+    display: flex;
+    justify-content: space-around;
+    visibility: visible;
+    width: 3rem;
+  }
+  nav {
+    margin-right: 10vw;
+    width: 0%;
   }
 }
