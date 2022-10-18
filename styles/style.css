@@ -10,14 +10,19 @@
   color: white;
 }
 h1 {
-  font-size: 65px;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 h2 {
+  font-size: 1.2rem;
+  text-align: center;
   margin-left: 30%;
   margin-right: 30%;
 }
 #spotifylogo {
-  width: 120px;
+  width: 8rem;
 }
 header {
   display: flex;
@@ -28,11 +33,12 @@ header {
 
 nav {
   display: flex;
-  width: 25vw;
+
   justify-content: space-between;
 }
 nav > a {
   text-decoration: none;
+  margin: 1.2rem;
 }
 .threeblockthing {
   display: flex;
@@ -54,10 +60,15 @@ section {
   text-align: center;
 }
 .kanyesection {
+  background-image: url(../images/spotify-icon-white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15%;
   padding: 10%;
   background-color: #00b172;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .info {
@@ -66,12 +77,44 @@ section {
   justify-content: start;
   align-items: flex-start;
   flex-direction: column;
-  width: 25vw;
+  width: 30vw;
+  margin-top: 3rem;
 }
-.kanyehead {
-  font-size: xx-large;
+#kanyehead {
+  font-size: 30px;
+  text-decoration: underline;
 }
 
 #app {
-  width: 300px;
+  margin-right: -3rem;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+#whats {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+  margin: 5%;
+}
+
+@media (max-width: 680px) {
+  .kanyesection {
+    flex-direction: column;
+    background-image: none;
+    padding: 0%;
+  }
+  #app {
+    width: 70vw;
+  }
+  .info {
+    width: 70vw;
+  }
 }
